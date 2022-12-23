@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        Graph graph = new Graph();
-
+        Graph graph = new Graph(); // creating the graph instance
+        // creating vertex
         Vertex v1 = new Vertex("0");
         Vertex v2 = new Vertex("1");
         Vertex v3 = new Vertex("2");
@@ -20,8 +20,8 @@ public class Main {
         graph.addEdge(v4, v2, 4);
         graph.addEdge(v3, v4, 5);
 
-        graph.printGraph();
-        graph.countVertex();
-        graph.countEdge();
+        graph.printGraph(); // printing the graph
+        graph.countVertex(); // counting the vertex in the graph
+        graph.countEdge(); // counting edges in the graph
     }
 }

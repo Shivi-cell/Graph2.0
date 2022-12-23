@@ -2,24 +2,24 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Graph {
-    private Set<Vertex> vertices;
+    private Set<Vertex> vertices; // graph having the set of vertices
 
     public Graph()
     {
         vertices = new HashSet<>();
     }
 
-    public void addEdge(Vertex v1, Vertex v2, int weight)
+    public void addEdge(Vertex v1, Vertex v2, int weight) // adding the edges
     {
         v1.getEdgeList().add(new Edge(v2, weight));
     }
 
-    public void addVertex(Vertex v)
+    public void addVertex(Vertex v) // adding the vertex
     {
         vertices.add(v);
     }
 
-    public void printGraph()
+    public void printGraph() // printing graph
     {
         System.out.println("Printing the graph info...");
         for (Vertex v : vertices)
@@ -32,12 +32,12 @@ public class Graph {
         }
     }
 
-    public void countVertex()
+    public void countVertex()  // counting the vertex
     {
         System.out.println("The graph contains "+vertices.size()+" vertices.");
     }
 
-    public void countEdge()
+    public void countEdge() // counting the edges
     {
         int count = 0;
         for (Vertex v : vertices)

@@ -2,8 +2,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Vertex {
-    private String label;
-    private List<Edge> edgeList;
+    private String label; // vertex label
+    private List<Edge> edgeList; // vertex having the list of edges related to itself
     public Vertex(String label)
     {
         this.label = label;
